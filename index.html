@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Destroy</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-black text-white">
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full z-50
+            px-4 md:px-12
+            py-2
+            flex justify-between items-center
+            bg-black/30 backdrop-blur-md
+            transition-all duration-300">
+    <!-- referencia para delizar hacia el hero -->
+    <a href="#hero">
+      <img src="assets/LogoBlanco.png" alt="Destroy" class="h-8 md:h-12 hover:scale-105 transition duration-300" />
+    </a>
+
+    <ul class="flex gap-3 md:gap-10
+           uppercase
+           text-[9px] md:text-[11px]
+           tracking-[2px] md:tracking-[6px]">
+      <li><a href="#shirts">Camisetas</a></li>
+      <li><a href="#pants">Pantalones</a></li>
+      <li><a href="#caps">Gorras</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="relative h-screen overflow-hidden">
+    <!-- Imagen -->
+    <img src="assets/hero/hero.jpg" alt="Destroy Hero"
+      class="absolute inset-0 w-full h-full object-cover object-[center_30%]" />
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80"></div>
+
+    <!-- Logo enorme -->
+    <img src="assets/LogoBlanco.png" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+              w-[350px] md:w-[600px] lg:w-[900px] opacity-70" />
+
+    <!-- Contenido -->
+    <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
+      <p class="mt-32 md:mt-64 text-sm md:text-base text-gray-300 tracking-[3px] md:tracking-[8px] uppercase">
+        Streetwear Underground
+      </p>
+
+
+
+
+
+    </div>
+  </section>
+  <!-- Seccion Camisetas -->
+  <section id="shirts" class="bg-black text-white py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- SECCION PRINCIPAL -->
+
+      <div class="grid lg:grid-cols-[1.2fr_1fr] items-center gap-0">
+        <!-- IMAGEN -->
+
+        <div class="relative">
+          <img src="assets/shirts/ShirtsBanner.jpeg" alt="Camisetas Destroy" class="w-full h-[350px] md:h-[500px] lg:h-[700px] object-cover" />
+        </div>
+
+        <!-- TEXTO -->
+
+        <div class="relative lg:-ml-24 z-10 bg-black p-6 md:p-10">
+          <p class="uppercase tracking-[2px] md:tracking-[6px] text-gray-400 mb-4">
+            Destroy Collection
+          </p>
+
+          <h2 class="text-3xl md:text-5xl lg:text-7xl font-black uppercase mb-6">
+            Camisetas
+            <br />
+            & Busos
+          </h2>
+
+          <p class="text-gray-300 leading-relaxed mb-8">
+            Diseños inspirados en la cultura urbana, creados para quienes
+            buscan destacar con prendas auténticas y exclusivas.
+          </p>
+
+          <button id="shirtsBtn" class="uppercase tracking-[2px] md:tracking-[5px] text-sm group">
+            Explorar colección
+
+            <span class="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-2">
+              →
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- COLECCION OCULTA -->
+
+      <div id="shirtsCollection" class="collection-hidden">
+        <!-- Liena para hacerlo bonito  -->
+        <div class="collection-line"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10 md:pt-16">
+          <!-- PRODUCTO 1 -->
+
+          <div class="product-card group">
+            <img src="assets/shirts/shirt1.png" alt=""
+              class="w-full aspect-[4/5] object-cover transition duration-500 group-hover:scale-105" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Buso Blanco Destroy</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$100.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20el%20buso%20Blanco%20Destroy"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+          <!-- PRODUCTO 2 -->
+
+          <div class="product-card group">
+            <img src="assets/shirts/shirt2.png" alt=""
+              class="w-full aspect-[4/5] object-cover transition duration-500 group-hover:scale-105" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Buso Cafe Destroy</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$100.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20el%20buso%20Cafe%20Destroy"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+          <!-- PRODUCTO 3 -->
+
+          <div class="product-card group">
+            <img src="assets/shirts/shirt3.png" alt=""
+              class="w-full aspect-[4/5] object-cover transition duration-500 group-hover:scale-105" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Buso Beige Destroy</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$100.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20el%20buso%20Beige%20Destroy"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+           <!-- PRODUCTO 4 -->
+
+          <div class="product-card group">
+            <img src="assets/shirts/shirt4.png" alt=""
+              class="w-full aspect-[4/5] object-cover transition duration-500 group-hover:scale-105" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Camiseta Negra Destroy</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$70.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20la%20camiseta%20Destroy%20Negra"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+           <!-- PRODUCTO 5 -->
+
+          <div class="product-card group">
+            <img src="assets/shirts/shirt5.png" alt=""
+              class="w-full aspect-[4/5] object-cover transition duration-500 group-hover:scale-105" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Camiseta Beige Destroy</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$70.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20la%20camiseta%20Destroy%20Beige"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Seccion Pantalones -->
+  <section id="pants" class="bg-black text-white py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- SECCION PRINCIPAL -->
+
+      <div class="grid lg:grid-cols-[1.2fr_1fr] items-center gap-0">
+        <!-- TEXTO -->
+
+        <div class="relative lg:-ml-24 z-10 bg-black p-6 md:p-10">
+          <p class="uppercase tracking-[2px] md:tracking-[6px] text-gray-400 mb-4">
+            Destroy Collection
+          </p>
+
+          <h2 class="text-3xl md:text-5xl lg:text-7xl font-black uppercase mb-6">
+            Pantalones
+            <br />
+            & Jeans
+          </h2>
+
+          <p class="text-gray-300 leading-relaxed mb-8">
+            Los diseños mas recientes de Destroy, inspirados en la cultura urbana,
+            creados para quienes buscan destacar con prendas auténticas y exclusivas.
+          </p>
+
+          <button id="pantsBtn" class="uppercase tracking-[2px] md:tracking-[5px] text-sm group">
+            Explorar colección
+
+            <span class="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-2">
+              →
+            </span>
+          </button>
+        </div>
+        <!-- IMAGEN -->
+
+        <div class="relative">
+          <img src="assets/pants/PantsBanner.jpeg" alt="Camisetas Destroy" class="w-full h-[700px] object-cover" />
+        </div>
+      </div>
+
+      <!-- COLECCION OCULTA -->
+
+      <div id="pantsCollection" class="collection-hidden">
+        <!-- Liena para hacerlo bonito  -->
+        <div class="collection-line"></div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-16">
+          <!-- PRODUCTO 1 -->
+
+          <div class="product-card group">
+            <img src="assets/pants/pant1.png" alt=""
+              class="w-full aspect-[4/5] object-cover transition duration-500 group-hover:scale-105" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Destroy Classic</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$120.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20el%20pantalon%20Destroy%20Classic"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+          <!-- PRODUCTO 2 -->
+
+          <div class="product-card group">
+            <img src="assets/pants/pant2.png" alt=""
+              class="w-full aspect-[4/5] object-cover transition duration-500 group-hover:scale-105" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Destroy Skull</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$120.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20el%20pantalon%20Destroy%20Skull"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+          <!-- PRODUCTO 3 -->
+
+          <div class="product-card group">
+            <img src="assets/pants/pant3.png" alt=""
+              class="w-full aspect-[4/5] object-cover transition duration-500 group-hover:scale-105" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Destroy Black</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$120.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20el%20pantalon%20Destroy%20Black"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Seccion Gorras -->
+  <section id="caps" class="bg-black text-white py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- SECCION PRINCIPAL -->
+
+      <div class="grid lg:grid-cols-[1.2fr_1fr] items-center gap-0">
+        <!-- IMAGEN -->
+
+        <div class="relative">
+          <img src="assets/caps/CapsBanner.jpeg" alt="Gorras Destroy" class="w-full h-[700px] object-cover" />
+        </div>
+
+        <!-- TEXTO -->
+
+        <div class="relative lg:-ml-24 z-10 bg-black p-6 md:p-10">
+          <p class="uppercase tracking-[2px] md:tracking-[6px] text-gray-400 mb-4">
+            Destroy Collection
+          </p>
+
+          <h2 class="text-3xl md:text-5xl lg:text-7xl font-black uppercase mb-6">
+            Gorras
+            <br />
+            & Accesorios
+          </h2>
+
+          <p class="text-gray-300 leading-relaxed mb-8">
+            Diseños inspirados en la cultura urbana, creados para quienes
+            buscan destacar con prendas auténticas y exclusivas.
+          </p>
+
+          <button id="capsBtn" class="uppercase tracking-[2px] md:tracking-[5px] text-sm group">
+            Explorar colección
+
+            <span class="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-2">
+              →
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- COLECCION OCULTA -->
+
+      <div id="capsCollection" class="collection-hidden">
+        <!-- Liena para hacerlo bonito  -->
+        <div class="collection-line"></div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-16">
+          <!-- PRODUCTO 1 -->
+
+          <div class="product-card group">
+            <img src="assets/caps/cap1.png" alt=""
+              class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition duration-500" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Destroy Pink</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$35.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20la%20gorra%20Destroy%20Pink"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+          <!-- PRODUCTO 2 -->
+
+          <div class="product-card group">
+            <img src="assets/caps/cap2.png" alt=""
+              class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition duration-500" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Destroy Blue</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$35.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20la%20gorra%20Destroy%20Blue"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] group-hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+          <!-- PRODUCTO 3 -->
+
+          <div class="product-card group">
+            <img src="assets/caps/cap3.png" alt=""
+              class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition duration-500" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Destroy Green</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$35.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20la%20gorra%20Destroy%20Green"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] group-hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+          <!-- PRODUCTO 4 -->
+          <div class="product-card group">
+            <img src="assets/caps/cap4.png" alt=""
+              class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition duration-500" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Destroy Dark Blue</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$35.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20la%20gorra%20Destroy%20Dark%20Blue"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] group-hover:text-gray-400 transition">
+              Consultar →
+            </a>
+          </div>
+
+           <!-- PRODUCTO 5 -->
+          <div class="product-card group">
+            <img src="assets/caps/cap5.png" alt=""
+              class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition duration-500" />
+
+            <h3 class="mt-4 uppercase text-lg font-semibold">Destroy Gray</h3>
+
+            <p class="text-gray-400 mb-4 text-sm md:text-base">$35.000</p>
+
+            <a href="https://wa.me/573124085286?text=Hola,%20me%20interesa%20la%20gorra%20Destroy%20Gray"
+              target="_blank" class="uppercase text-sm tracking-[2px] md:tracking-[3px] group-hover:text-gray-400 transition">
+              Consultar →
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECCION FINAL -->
+
+  <section id="closing" class="bg-black text-white py-40 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-8 text-center">
+
+      <!-- LOGO GIGANTE -->
+
+      <img src="assets/LogoBlanco.png" alt="Destroy" 
+      class="w-full max-w-xl mx-auto mb-12 hover:scale-105
+            transition duration-700">
+
+      <!-- TEXTO -->
+
+      <p class="uppercasetracking-[8px]text-gray-400mb-6">
+        Streetwear Underground
+      </p>
+
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-12">
+        Diseños exclusivos para quienes marcan su propio camino.
+        Inspirados en la cultura urbana y creados para destacar.
+      </p>
+
+      <div class="flex flex-col items-center gap-4">
+
+        <!-- BOTON  wsp-->
+
+        <a href="https://wa.me/573124085286" target="_blank" 
+        class="inline-flex items-center gap-3 uppercase tracking-[4px]
+              border border-white px-10 py-4 hover:bg-white hover:text-black
+              transition duration-300">
+          Hablar por WhatsApp
+
+          <span>
+            →
+          </span>
+
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/destroy.cs" target="_blank"
+         class="text-gray-400 uppercase tracking-[4px] text-sm
+              hover:text-white transition duration-300">
+          Visitar Instagram →
+        </a>
+      </div>
+
+    </div>
+
+    </div>
+
+  </section>
+  <footer class="bg-white text-black py-14">
+
+    <div class=" max-w-7xl mx-auto px-8">
+
+      <div class="flex flex-col items-center text-center">
+
+        <!-- Logo -->
+        <img src="assets/LogoNegro.png" alt="Destroy" 
+        class="max-w-xs w-fullmb-5">
+
+        <!-- Slogan -->
+
+        <p class="uppercase tracking-[4px]text-xs text-gray-500 mb-6">
+          Streetwear Underground
+        </p>
+
+        <!-- Redes -->
+
+        <div class="flex gap-8 text-sm uppercasetracking-[3px] mb-6">
+
+          <a href="#" class="hover:opacity-60 transition">
+            Instagram
+          </a>
+
+          <a href="#" class="hover:opacity-60 transition">
+            WhatsApp
+          </a>
+
+        </div>
+
+        <!-- Línea -->
+
+        <div class="w-full max-w-md h-px bg-gray-300 mb-5"></div>
+
+        <!-- Copyright -->
+
+        <p class=" text-xs text-gray-500 tracking-[2px]">
+          © 2026 DESTROY
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts para mostrar secciones -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
